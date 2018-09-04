@@ -8,7 +8,54 @@
   <!-- <script src="libs/angular/angular.js"></script> -->
   <script src="libs/requirejs/require.js"  data-main="js/main"></script>
 </head>
-<body ng-app="myApp" >
+<body ng-app="myApp">
+  <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top header" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">切换菜单</span>
+          </button>
+          <a class="navbar-brand" ui-sref="home">简言</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a ui-sref="home">首页</a></li>
+            <li><a ui-sref="edit">编辑器</a></li>
+            <li><a ui-sref="about">关于</a></li>
+            <li><a href="#contact">联系</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">其他</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">菜单一</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">菜单标题</li>
+                <li><a href="#">菜单二</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdow navbar-user">
+                       <a href="unsafe:javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                           <img src="images/user.jpg" alt="user">
+                           <span class="d-none d-md-inline">Admin</span>
+                       </a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">个人中心</a></li>
+                         <li class="divider"></li>
+                         <li><a href="#">退出</a></li>
+                       </ul>
+                   </li>
+          </ul>
+          <div class="form-inline form-search">
+            <div class="form-group">
+                <input type="text" class="form-control"  placeholder="搜索...">
+            </div>
+          </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
     <div ng-cloak ui-view></div>
 </body>
 </html>

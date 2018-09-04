@@ -18,10 +18,12 @@
     "angular-route": "^1.6.9",
     "angular-ui-router": "^1.0.20",
     "body-parser": "^1.18.3",
+    "codemirror": "^5.40.0",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.0",
+    "popper.js": "^1.14.4",
     "require": "^2.4.20",
     "requirejs": "^2.3.6"
   }

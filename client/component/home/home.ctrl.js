@@ -1,4 +1,4 @@
-define(['app','css!../../../css/home.css'], function (app) {
+define(['app'], function (app) {
     app.register.controller('HomeController', HomeController);
 
     HomeController.$inject = ['$scope'];
@@ -6,4 +6,4 @@ define(['app','css!../../../css/home.css'], function (app) {
     function HomeController($scope) {
         console.log("HomeController created successfully!!!");
     }
-})
+});

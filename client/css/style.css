@@ -1,4 +1,17 @@
-body{
-  background: #ff6000;
-  font-style: 15px;
+/* 样式修改正 */
+.dropdown-toggle::after{display: inline-block;}
+.dropdown-header{color:rgba(255,255,255,.6);}
+
+
+/* 头部 */
+.header .navbar-user img {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: -5px 10px 0 0;
+  border-radius: 30px;
+}
+
+.header .form-search{
+  margin-top:4px;
 }
